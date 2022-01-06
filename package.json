@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "name": "cordova-plugin-privacy-screen",
+  "description": "Cordova Privacy Screen Plugin",
+  "cordova": {
+    "id": "cordova-plugin-privacy-screen",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}
