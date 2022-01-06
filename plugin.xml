@@ -7,10 +7,6 @@
   <name>PrivacyScreenPlugin</name>
   <description>PrivacyScreen Plugin</description>
 
-  <js-module src="www/privacy-screen.js" name="PrivacyScreen">
-    <clobbers target="PrivacyScreen" />
-  </js-module>
-
   <!-- Android用の設定 -->
   <platform name="android">
 
