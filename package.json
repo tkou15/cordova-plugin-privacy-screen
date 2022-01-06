@@ -8,5 +8,24 @@
       "android",
       "ios"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkou15/cordova-plugin-privacy-screen.git"
+  },
+  "keywords": [
+    "privacy",
+    "screen",
+    "privacyscreen",
+    "privacy-screen",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Koichi Takahashi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tkou15/cordova-plugin-privacy-screen/issues"
+  },
+  "homepage": "https://github.com/tkou15/cordova-plugin-privacy-screen#readme"
 }
