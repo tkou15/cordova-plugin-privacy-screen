@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cordova-plugin-privacy-screen"
+  version="1.0.0">
+
+  <name>PrivacyScreenPlugin</name>
+  <description>PrivacyScreen Plugin</description>
+
+  <js-module src="www/privacy-screen.js" name="PrivacyScreen">
+    <clobbers target="PrivacyScreen" />
+  </js-module>
+
+  <!-- Android用の設定 -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="PrivacyScreen">
+        <param name="android-package" value="tkou15.cordova.plugins.privacyscreen.PrivacyScreen"/>
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+    <!-- ソースファイル -->
+    <source-file src="src/android/PrivacyScreen.java" target-dir="src/tkou15/cordova/plugins/privacyscreen" />
+  </platform>
+	<platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="PrivacyScreen">
+        <param name="ios-package" value="PrivacyScreen"/>
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+		<header-file src="src/ios/PrivacyScreen.h"/>
+		<source-file src="src/ios/PrivacyScreen.m"/>
+	</platform>
+</plugin>
